@@ -1,1 +1,49 @@
-# Pranitha-GOUDGTC
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANIMATIONS PAGE</title>
+    <style>
+        .circle{
+            width:200px;
+            height:50px;
+            background-color: aqua;
+            border-radius:none;
+            animation-name:move ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            text-align: center;
+            color: blue;
+            font-size: larger;
+            font-weight: 500;
+            border: black 10px solid;
+            justify-content: center;
+            display:flex;
+            align-items:center;
+        }
+        .center-image {
+            position: absolute;
+            top: 200px;   
+            left: 250px;
+            height:200px;
+            width:200px; 
+        }
+        @keyframes colorchange {
+            from{background-color: aqua;}
+            to{background-color: red; margin-left:1000px;}
+        }
+        @keyframes move {
+            0%{background-color: violet;left:0px;top:0px; }
+            25%{background-color: white;left:500px;top:500px;}
+            50%{background-color: red;left:0px;top:500px }
+            
+            75%{background-color:white ; left:500px;top:0px}
+            100% { background-color: yellow; left:0px;top:0px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">PRANITHA GOUD</div>
+        <img src="https://images.pexels.com/photos/2071779/pexels-photo-2071779.jpeg" class="center-image" />
+    </body>
+</html>
